@@ -14,8 +14,7 @@ import {HttpClientModule} from "@angular/common/http";
   ],
   imports: [
     CommonModule
-  ],
-  exports: [ListVinylComponent]
+  ]
 })
 export class VinylModule {
 }
