@@ -7,8 +7,11 @@
     <div class="card-text">
       <h5 class="bold">{{vinyl.releaseDate}}</h5>
     </div>
+    <app-counting-buttons
+      [releaseDate]="vinyl.releaseDate"
+      (releaseDateChange)="onReleaseDateChange($event)"></app-counting-buttons>
     <div class="d-flex flex-column justify-content-center">
-      <button [disabled]="true" class="btn btn-primary mt-2">Modifier</button>
+      <button (click)="changeArtist()" class="btn btn-primary mt-2">Modifier</button>
     </div>
   </div>
 </div>
