@@ -1,7 +1,11 @@
 export interface Vinyl {
-  uuid: string,
-  title: string,
+  id: string,
+  songName: string,
   imageUrl: string,
-  artiste: string,
+  author: Author,
   releaseDate: Date;
+}
+
+export interface Author {
+  name: string;
 }

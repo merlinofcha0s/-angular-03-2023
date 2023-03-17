@@ -3,13 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import {VinylModule} from "./vinyl/vinyl.module";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule, VinylModule
+    BrowserModule,
+    VinylModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

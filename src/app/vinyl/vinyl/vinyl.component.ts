@@ -11,9 +11,9 @@ export class VinylComponent {
 
   @Input()
   public vinyl: Vinyl = {
-    uuid: '',
-    title: '',
-    artiste: '',
+    id: '',
+    songName: '',
+    author: {name: ''},
     imageUrl: '',
     releaseDate: new Date()
   }

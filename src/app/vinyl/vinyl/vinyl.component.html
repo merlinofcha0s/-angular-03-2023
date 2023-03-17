@@ -1,8 +1,8 @@
 <div class="card" style="width: 300px;">
-  <img class="w-100" [src]="vinyl.imageUrl"  alt="Album photo of {{vinyl.artiste}}">
+  <img class="w-100" [src]="vinyl.imageUrl"  alt="Album photo of {{vinyl.author.name}}">
   <div class="card-body">
     <div class="card-title">
-      <h3>{{vinyl.title}}<br><small>par {{vinyl.artiste}}</small></h3>
+      <h3>{{vinyl.songName}}<br><small>par {{vinyl.author.name}}</small></h3>
     </div>
     <div class="card-text">
       <h5 class="bold">{{vinyl.releaseDate | date: 'short'}}</h5>
