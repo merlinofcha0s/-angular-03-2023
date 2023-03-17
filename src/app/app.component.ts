@@ -15,12 +15,12 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.router.events.subscribe(
-      events => console.dir(events)
-    );
-    this.activatedRoute.paramMap.subscribe(
-      param => param.get('uuid')
-    );
+    // this.router.events.subscribe(
+    //   events => console.dir(events)
+    // );
+    // this.activatedRoute.paramMap.subscribe(
+    //   param => param.get('uuid')
+    // );
   }
 
   goToEmployees() {

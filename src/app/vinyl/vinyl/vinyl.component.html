@@ -11,7 +11,7 @@
 <!--      [releaseDate]="vinyl.releaseDate"-->
 <!--      (releaseDateChange)="onReleaseDateChange($event)"></app-counting-buttons>-->
     <div class="d-flex flex-column justify-content-center">
-      <button (click)="changeArtist()" class="btn btn-primary mt-2">Modifier</button>
+      <button [routerLink]="'vinyl/edit'" class="btn btn-primary mt-2">Modifier</button>
     </div>
   </div>
 </div>
