@@ -7,6 +7,7 @@ import {Vinyl} from "../vinyl.model";
   styleUrls: ['./vinyl.component.scss']
 })
 export class VinylComponent {
+  public isEditing = false;
 
   @Input()
   public vinyl: Vinyl = {
@@ -14,15 +15,14 @@ export class VinylComponent {
     title: '',
     artiste: '',
     imageUrl: '',
-    releaseDate: 0
+    releaseDate: new Date()
   }
 
   changeArtist(): void {
-    this.vinyl.artiste = 'King of Pop';
+    this.isEditing = !this.isEditing;
   }
 
-  onReleaseDateChange(newReleaseDate: number) {
+  onReleaseDateChange(newReleaseDate: Date) {
     this.vinyl.releaseDate = newReleaseDate;
-    //emit
   }
 }

@@ -1,0 +1,6 @@
+<div class="d-flex justify-content-around">
+  <div *ngFor="let vinyl of vinyls; index as i; even as e; odd as o; last as l; first as f">
+    {{i}}, {{e}}, {{o}}, {{l}}, {{f}}
+    <app-vinyl [vinyl]="vinyl"></app-vinyl>
+  </div>
+</div>

@@ -2,16 +2,18 @@ import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {VinylComponent} from './vinyl/vinyl.component';
 import { CountingButtonsComponent } from './counting-buttons/counting-buttons.component';
+import { ListVinylComponent } from './list-vinyl/list-vinyl.component';
 
 @NgModule({
   declarations: [
     VinylComponent,
-    CountingButtonsComponent
+    CountingButtonsComponent,
+    ListVinylComponent
   ],
   imports: [
     CommonModule
   ],
-  exports: [VinylComponent]
+  exports: [ListVinylComponent]
 })
 export class VinylModule {
 }
