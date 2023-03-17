@@ -6,6 +6,7 @@ import {VinylModule} from "./vinyl/vinyl.module";
 import {HttpClientModule} from "@angular/common/http";
 import {RouterModule} from "@angular/router";
 import {ROUTES} from "./app.routes";
+import {EmployeeModule} from "./employee/employee.module";
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import {ROUTES} from "./app.routes";
   ],
   imports: [
     BrowserModule,
+    EmployeeModule,
     HttpClientModule,
     RouterModule.forRoot(ROUTES)
   ],
